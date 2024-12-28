@@ -1,6 +1,7 @@
 package com.centurylink;
 
 public class Main {
+	static final int staticFinalInt =99999;
 	public static void main(String[] args) {
 		
 		int var1=43;
@@ -11,7 +12,7 @@ public class Main {
 		var1= 10;
 		st ="dkdjkdhkdhkdd";
 		for (int i = 0; i < 10; i++) {
-			System.out.println("Hello world!");
+			System.out.println("Hello world!"+ i);
 		}
 		st ="mmmmmmmmmmmmmmmmm";
 		var1= 67;
