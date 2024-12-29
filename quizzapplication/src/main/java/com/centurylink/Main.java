@@ -1,23 +1,27 @@
 package com.centurylink;
 
 public class Main {
-	static final int staticFinalInt =99999;
+	static  int staticFinalInt =99999;
 	public static void main(String[] args) {
 		
-		int var1=43;
-		String st ="jjj";
-		
+		int intVariable=43;
+		String stValue ="value11";
+		staticFinalInt +=1;
 		System.out.println("Hello world!");
 		
-		var1= 10;
-		st ="dkdjkdhkdhkdd";
+		intVariable= 10;
+		stValue ="updated value --";
+			args = new String[10];
 		for (int i = 0; i < 10; i++) {
+			args[i] ="val"+i;
 			System.out.println("Hello world!"+ i);
 		}
-		st ="mmmmmmmmmmmmmmmmm";
-		var1= 67;
-		var1 = 978;
-		st = "ddd";
-		System.out.println("dkdkhkd");
+		System.out.println(stValue);
+		stValue ="updated value -- at line 17";
+		System.out.println(stValue);
+		intVariable= 67;
+		intVariable = 978;
+		stValue = "ddd";
+		System.out.println(stValue);
 	}
 }

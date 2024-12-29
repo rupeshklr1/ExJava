@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.centurylink.Main",
+            "projectName": "quizzapplication"
+        },
+        {
+            "type": "java",
+            "name": "Quizz",
+            "request": "launch",
+            "mainClass": "com.centurylink.Quizz",
+            "projectName": "quizzapplication"
+        },
+        {
+            "type": "java",
+            "name": "EnumExample",
+            "request": "launch",
+            "mainClass": "com.centurylink.rc.EnumExample",
+            "projectName": "quizzapplication"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "com.centurylink.rc.ListExample",
+            "projectName": "quizzapplication"
+        },
+        {
+            "type": "java",
+            "name": "MapExample",
+            "request": "launch",
+            "mainClass": "com.centurylink.rc.MapExample",
+            "projectName": "quizzapplication"
+        },
+        {
+            "type": "java",
+            "name": "ObjectClassExample",
+            "request": "launch",
+            "mainClass": "com.centurylink.rc.ObjectClassExample",
+            "projectName": "quizzapplication"
+        }
+    ]
+}

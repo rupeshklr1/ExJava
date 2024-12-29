@@ -25,7 +25,6 @@ HashSet: Best for scenarios where you need to store unique elements and the orde
 		for (String fruit : arrayList) {
 			System.out.println(fruit);
 		}
-		
 		// Perform some operations on ArrayList
 		arrayList.remove("Banana");
 		System.out.println("ArrayList after removing 'Banana': " + arrayList);

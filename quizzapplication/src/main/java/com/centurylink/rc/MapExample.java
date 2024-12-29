@@ -2,6 +2,7 @@ package com.centurylink.rc;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class MapExample {
@@ -15,6 +16,8 @@ public class MapExample {
 		hashMap.put("Apple", 40); // Duplicate keys are allowed, but the value will be updated
 		
 		System.out.println("HashMap:");
+		Set<String>  localSampleKeysForHashMapWeareUsing= hashMap.keySet();
+		Set<Map.Entry<String, Integer>> entries = hashMap.entrySet();
 		for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
 			System.out.println(entry.getKey() + " = " + entry.getValue());
 		}
