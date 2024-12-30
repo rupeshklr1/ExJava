@@ -56,8 +56,8 @@ public class ObjectClassExample {
 		System.out.println("obj3 hashCode: " + obj3.hashCode());
 		
 		// Demonstrate compareTo method
-		System.out.println("obj1 compareTo obj2: " + obj1.compareTo(obj2));
-		System.out.println("obj1 compareTo obj3: " + obj1.compareTo(obj3));
+//		System.out.println("obj1 compareTo obj2: " + obj1.compareTo(obj2));
+//		System.out.println("obj1 compareTo obj3: " + obj1.compareTo(obj3));
 	}
 }
 

@@ -1,5 +1,7 @@
 def funCall() :
     print("message from funCall")
+    localVariableForMethod = 10
+    print(a,"from method funCall")
     if(1):
         print("inside if")
     else:

@@ -18,7 +18,10 @@ console.log(undefinedVariableValue);
 
 // Path: JavaScript/sample.js
 objectVariableValue["name"] = "Raju";
-objectVariableValue["newKey"] = objectVariableValue;
+localTempVar = objectVariableValue;
+var tempOutofScopeVar = {};
+tempOutofScopeVar= JSON.parse(JSON.stringify(objectVariableValue));
+console.log("before updation ", tempOutofScopeVar , objectVariableValue);
+objectVariableValue["newKey"] = tempOutofScopeVar;
 
-
-console.log(objectVariableValue);
+console.log("--------end ", JSON.stringify(objectVariableValue, null, 4));

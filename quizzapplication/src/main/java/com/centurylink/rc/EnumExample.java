@@ -32,13 +32,12 @@ enum Operation {
 	DIVISION {
 		@Override
 		public double apply(double x, double y) {
-			if (y == 0) {
+			if (y <= 0) {
 				throw new ArithmeticException("Cannot divide by zero");
 			}
 			return x / y;
 		}
 	};
-	
 	public abstract double apply(double x, double y);
 }
 
@@ -73,6 +72,7 @@ public class EnumExample {
 	
 	public static void main(String[] args) {
 		EnumExample example = new EnumExample();
+		System.out.println(9/-4);
 		
 		// Loop through all days of the week and print a message for each
 		for (Day day : Day.values()) {
@@ -85,7 +85,8 @@ public class EnumExample {
 		System.out.println("\n\n\nArithmetic Operations:");
 		double a = 10.0;
 		double b = 5.0;
-		
+		Operation op1= Operation.DIVISION;
+		System.out.printf("%s of %.2f and %.2f is %.2f%n", op1, a, b, op1.apply(a, -1));
 		for (Operation op : Operation.values()) {
 			System.out.printf("%s of %.2f and %.2f is %.2f%n", op, a, b, op.apply(a, b));
 		}
